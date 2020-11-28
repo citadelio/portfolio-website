@@ -1,65 +1,39 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Footer from '../components/Footer'
+import Hero from '../components/Hero'
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home = () => {
+  return ( 
+  <>
+   <div id="main"> 
+    <Hero sub="Hi there 👋" main="Hussein here"/>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <div id="main-content">
+          <div id="main-page-content">  
+            <div className="vc_row row_padding_bottom">            
+                                      
+                <div className="one_third">
+                    <h4 className="has-mask" data-delay="0">I build scalable digital solutions.</h4>
+                </div>
+                <div className="two_third last">
+                    <p className="has-animation" data-delay="400">I'm a Software Engineer from Port Harcourt, Nigeria🇳🇬. with a knack for creating engaging and immersive experience on the Web and on Mobile. A little more <Link href="/about" ><a className="sidelink ajax-link" data-type="page-transition">About me</a></Link> <br/> I've worked on a number of really interesting <Link href="/portfolio" ><a className="sidelink ajax-link" data-type="page-transition">Projects</a></Link> 
+                     and written a few technical <Link href="/articles" ><a className="sidelink ajax-link" data-type="page-transition">Articles</a></Link> 
+                     </p>
+            
+                    
+                </div>
+            
+            </div>
+          </div>  
+      </div>  
+      </div>  
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <Footer/>
+  </>
   )
 }
+
+export default Home;
