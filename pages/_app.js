@@ -6,14 +6,19 @@ function MyApp({ Component, pageProps }) {
   return <>
   <Head>
       <title>Hussein Warrake - Software Engineer | Tech Enthusiast | Gadget Lover</title>
-      <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
-      <meta name="description" content="" />
-      <meta name="author" content=""/>
+      <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+      <meta name="description" content="Hussein is a software engineer with a knack for creating engaging and immersive experience on the Web and on Mobile." />
+      <meta name='keywords' content="Hussein, Warrake, Portfolio, Personal website, Reactjs, Nextjs, Web developer, Software, Software engineer, programmer" />
+      <meta name="author" content="Hussein Warrake"/>
       <meta charSet="UTF-8" />    
       <link rel="icon" type="image/ico" href="/favicon.ico" />
       <link href="/style.css" rel="stylesheet" />
       <link href="/css/font-awesome.min.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"/>
+
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000"/>
   </Head>
   {/* <body className="hidden hidden-ball smooth-scroll drag-scroll">	 */}
   <main>		
